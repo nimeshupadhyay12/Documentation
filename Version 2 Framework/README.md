@@ -563,7 +563,7 @@ Anomaly-Hunter/
 # ⚙ Installation
 
 ```bash
-git clone https://github.com/YourUsername/Anomaly-Hunter.git
+git clone https://github.com/nimeshupadhyay12/Anomaly-Hunter.git
 
 cd Anomaly-Hunter
 ```
