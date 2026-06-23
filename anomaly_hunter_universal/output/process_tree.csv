@@ -1,0 +1,210 @@
+Depth,PID,Process,Process Name,Parent,Parent Name,Event Count,Alert Severity,Alert Score,Detection Types,Suspicious
+0,5516,C:\Windows\System32\msiexec.exe,msiexec.exe,C:\Windows\System32\services.exe,services.exe,92,CRITICAL,100,LOLBin Abuse,YES
+0,1860,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,,,17,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+0,7884,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,,,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+0,992,C:\Windows\System32\lsass.exe,lsass.exe,,,24,CRITICAL,90,Sigma Match,YES
+0,25088,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,microsoft-365-16-0-19725-20152.exe,,,2,CRITICAL,80,Malware Staging | Rare Parent-Child | Sigma Match,YES
+0,33012,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,microsoft-365-16-0-19725-20152.exe,,,4,CRITICAL,80,Malware Staging | Rare Parent-Child | Sigma Match,YES
+0,31960,C:\Program Files\WindowsApps\MSTeams_26106.1911.4707.3286_x64__8wekyb3d8bbwe\ms-teams.exe,ms-teams.exe,,,1,FP-SUPPRESSED,45,External Communication | Rare Parent-Child | Rare Process,YES
+0,37124,C:\Windows\System32\VSSVC.exe,vssvc.exe,C:\Windows\System32\services.exe,services.exe,2,LOW,30,Rare Parent-Child | Rare Process,YES
+0,26548,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe,windowsterminal.exe,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\wt.exe,wt.exe,1,FP-SUPPRESSED,30,Rare Parent-Child | Rare Process,YES
+0,7284,C:\Windows\explorer.exe,explorer.exe,,,20,LOW,20,Malware Staging,YES
+0,5408,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe,searchhost.exe,,,19,LOW,20,Malware Staging,YES
+0,16316,C:\Windows\System32\sppsvc.exe,sppsvc.exe,C:\Windows\System32\services.exe,services.exe,9,INFO,15,Rare Parent-Child,YES
+0,35248,C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe,onedrivestandaloneupdater.exe,,,4,INFO,15,Rare Parent-Child,YES
+0,15932,C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe,onedrivestandaloneupdater.exe,,,4,INFO,15,Rare Parent-Child,YES
+0,20548,C:\Windows\System32\smartscreen.exe,smartscreen.exe,,,4,INFO,15,Rare Parent-Child,YES
+0,34940,C:\Program Files\WindowsApps\Claude_1.9659.2.0_x64__pzs8sxrjxfjjc\app\claude.exe,claude.exe,,,25,,0,,
+0,35608,C:\Program Files\Microsoft OneDrive\OneDrive.exe,onedrive.exe,,,523,,0,,
+0,19952,C:\Windows\System32\svchost.exe,svchost.exe,,,8,,0,,
+0,1964,C:\Windows\System32\svchost.exe,svchost.exe,,,93,,0,,
+0,11184,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,,,27,,0,,
+0,1648,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,,,33,,0,,
+0,12420,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,,,6,,0,,
+0,3840,C:\Windows\System32\svchost.exe,svchost.exe,,,42,,0,,
+0,3584,C:\Windows\System32\spoolsv.exe,spoolsv.exe,,,3,,0,,
+0,8136,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,12,,0,,
+0,37844,C:\Program Files\Microsoft OneDrive\OneDrive.exe,onedrive.exe,,,3,,0,,
+0,15032,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,,,20,,0,,
+0,28004,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,C:\Windows\System32\services.exe,services.exe,28,,0,,
+0,13268,C:\Windows\System32\svchost.exe,svchost.exe,,,19,,0,,
+0,9292,C:\Windows\System32\svchost.exe,svchost.exe,,,3,,0,,
+0,8508,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,C:\Windows\System32\services.exe,services.exe,12,,0,,
+0,10144,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,1,,0,,
+0,29364,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,1,,0,,
+0,31480,C:\Windows\System32\svchost.exe,svchost.exe,,,4,,0,,
+0,20168,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,2,,0,,
+0,30844,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,,,9,,0,,
+0,1112,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,,,10,,0,,
+0,19440,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,,,11,,0,,
+0,23236,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,,,3,,0,,
+0,37196,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,1,,0,,
+0,15864,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,2,,0,,
+0,15636,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,,,14,,0,,
+0,19024,C:\Windows\System32\svchost.exe,svchost.exe,C:\Windows\System32\services.exe,services.exe,8,,0,,
+0,8332,C:\Windows\System32\taskhostw.exe,taskhostw.exe,,,1,,0,,
+0,37428,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,,,29,,0,,
+0,10176,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,,,30,,0,,
+0,1496,C:\Windows\System32\svchost.exe,svchost.exe,,,2,,0,,
+0,2688,C:\Windows\System32\SecurityHealthService.exe,securityhealthservice.exe,,,8,,0,,
+0,18136,C:\Program Files\WindowsApps\Claude_1.9659.2.0_x64__pzs8sxrjxfjjc\app\claude.exe,claude.exe,,,1,,0,,
+0,15532,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,,,5,,0,,
+1,33896,C:\Windows\System32\wscript.exe,wscript.exe,C:\Windows\System32\svchost.exe,svchost.exe,22,CRITICAL,100,LOLBin Abuse | Sigma Match | Suspicious Parent-Child | Svchost Script Spawn,YES
+1,12192,C:\Windows\System32\msiexec.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,CRITICAL,100,LOLBin Abuse,YES
+1,25464,C:\Windows\System32\msiexec.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,CRITICAL,100,LOLBin Abuse,YES
+1,27032,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,10052,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,13,CRITICAL,100,Persistence,YES
+1,11596,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,28276,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,27516,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,16272,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,20616,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,36860,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,26680,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,10908,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,17008,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,223,CRITICAL,100,Persistence,YES
+1,10064,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,28296,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,21416,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,12400,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,37280,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+1,25556,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,excel.exe,C:\Windows\explorer.exe,explorer.exe,316,CRITICAL,100,External Communication | Network Outlier,YES
+1,9916,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,60,CRITICAL,100,EDR Rule Detection | Malware Staging | Sigma Match,YES
+1,26752,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,microsoft-365-16-0-19725-20152.exe,C:\Windows\explorer.exe,explorer.exe,1,CRITICAL,80,Malware Staging | Rare Parent-Child | Sigma Match,YES
+1,37284,C:\Windows\SysWOW64\msiexec.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,3,MEDIUM,50,LOLBin Abuse | PowerShell Payload,YES
+1,22992,C:\Windows\SysWOW64\msiexec.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,3,MEDIUM,50,LOLBin Abuse | PowerShell Payload,YES
+1,17392,C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe,lockapp.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,LOW,30,Rare Parent-Child | Rare Process,YES
+1,3260,C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe,lockapp.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,LOW,30,Rare Parent-Child | Rare Process,YES
+1,14832,C:\Windows\System32\SearchProtocolHost.exe,searchprotocolhost.exe,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,1,LOW,30,Rare Parent-Child | Rare Process,YES
+1,21916,C:\Windows\System32\SearchProtocolHost.exe,searchprotocolhost.exe,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,1,LOW,30,Rare Parent-Child | Rare Process,YES
+1,11672,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\OpenConsole.exe,openconsole.exe,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe,windowsterminal.exe,1,FP-SUPPRESSED,30,Rare Parent-Child | Rare Process,YES
+1,35120,C:\Windows\System32\dllhost.exe,dllhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,3,INFO,15,Rare Parent-Child,YES
+1,11132,C:\Program Files\WindowsApps\MSTeams_26106.1911.4707.3286_x64__8wekyb3d8bbwe\ms-teamsupdate.exe,ms-teamsupdate.exe,C:\Windows\System32\svchost.exe,svchost.exe,19,FP-SUPPRESSED,15,Rare Parent-Child,YES
+1,7972,C:\Windows\System32\consent.exe,consent.exe,C:\Windows\System32\svchost.exe,svchost.exe,5,INFO,15,Rare Parent-Child,YES
+1,37552,C:\Windows\System32\smartscreen.exe,smartscreen.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,INFO,15,Rare Parent-Child,YES
+1,12776,C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.22342.0_x64__8wekyb3d8bbwe\HxTsr.exe,hxtsr.exe,C:\Windows\System32\svchost.exe,svchost.exe,19,FP-SUPPRESSED,15,Rare Parent-Child,YES
+1,28780,C:\Windows\System32\SearchFilterHost.exe,searchfilterhost.exe,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,2,INFO,15,Rare Parent-Child,YES
+1,17632,C:\Windows\System32\SearchFilterHost.exe,searchfilterhost.exe,C:\Windows\System32\SearchIndexer.exe,searchindexer.exe,1,INFO,15,Rare Parent-Child,YES
+1,18948,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x64.exe,vc_redist.x64.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,5,INFO,15,Rare Parent-Child,YES
+1,10628,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x86.exe,vc_redist.x86.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,5,INFO,15,Rare Parent-Child,YES
+1,5952,C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\Office16\OLicenseHeartbeat.exe,olicenseheartbeat.exe,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,24,INFO,15,Rare Parent-Child,YES
+1,18188,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,,0,,
+1,34880,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,,0,,
+1,37120,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,,0,,
+1,25864,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,,0,,
+1,19232,C:\Windows\System32\ctfmon.exe,ctfmon.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,,0,,
+1,4916,C:\Windows\System32\backgroundTaskHost.exe,backgroundtaskhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,3,,0,,
+1,15596,C:\Windows\System32\backgroundTaskHost.exe,backgroundtaskhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,3,,0,,
+1,18712,C:\Windows\System32\backgroundTaskHost.exe,backgroundtaskhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,3,,0,,
+1,3248,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,,0,,
+1,31504,C:\Windows\System32\SecurityHealth\10.0.29554.1001-0\SecurityHealthHost.exe,securityhealthhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,,0,,
+1,2968,C:\Windows\System32\SecurityHealth\10.0.29554.1001-0\SecurityHealthHost.exe,securityhealthhost.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,,0,,
+1,14080,C:\Windows\System32\taskhostw.exe,taskhostw.exe,C:\Windows\System32\svchost.exe,svchost.exe,2,,0,,
+1,18220,C:\Windows\System32\RuntimeBroker.exe,runtimebroker.exe,C:\Windows\System32\svchost.exe,svchost.exe,1,,0,,
+1,37812,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,2,,0,,
+1,24140,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,6,,0,,
+1,29048,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,53,,0,,
+1,18324,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,2,,0,,
+1,17240,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,2,,0,,
+1,19832,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,1,,0,,
+1,15936,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,1,,0,,
+1,35936,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,,0,,
+1,35656,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,,0,,
+1,15456,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,,0,,
+1,10424,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,C:\Windows\System32\msiexec.exe,msiexec.exe,5,,0,,
+1,37112,C:\Program Files\Common Files\microsoft shared\ClickToRun\OfficeClickToRun.exe,officeclicktorun.exe,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,microsoft-365-16-0-19725-20152.exe,295,,0,,
+1,32088,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,19904,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,12184,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,20840,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,2,,0,,
+1,31520,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,20852,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,12968,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,26708,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,37760,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,33704,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,33300,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+1,26108,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,C:\Program Files\Google\Chrome\Application\chrome.exe,chrome.exe,1,,0,,
+2,7288,C:\Users\Public\Pictures\kelotopu\uusd.exe,uusd.exe,C:\Windows\System32\wscript.exe,wscript.exe,26,CRITICAL,100,Malware Staging | Network Outlier | Sigma Match,YES
+2,24020,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,30448,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,8180,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,20308,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,32916,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,22780,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,25264,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,21536,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,7800,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,22372,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,22348,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,21,CRITICAL,100,EDR Rule Detection | Malware Staging | Sigma Match,YES
+2,24236,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,30312,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,24,CRITICAL,100,EDR Rule Detection | Malware Staging | Sigma Match,YES
+2,27136,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,3,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,15252,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,7396,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,19284,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,26804,C:\Windows\System32\cmd.exe,cmd.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,2,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+2,21052,C:\Windows\System32\curl.exe,curl.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,11,CRITICAL,100,EDR Rule Detection | LOLBin Abuse | Recon / IP Discovery,YES
+2,1948,C:\Windows\System32\schtasks.exe,schtasks.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,3,CRITICAL,100,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,YES
+2,12252,C:\Windows\System32\reg.exe,reg.exe,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,5,CRITICAL,100,EDR Rule Detection | LOLBin Abuse | Persistence | Sigma Match,YES
+2,29508,C:\Windows\Temp\{20A855C1-AE88-4232-8344-2B69A1F8BD6B}\.cr\vc_redist.x64.exe,vc_redist.x64.exe,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x64.exe,vc_redist.x64.exe,75,HIGH,60,Malware Staging,YES
+2,34308,C:\Windows\Temp\{27E1843A-2F51-4486-B11C-361AB8D51008}\.cr\vc_redist.x86.exe,vc_redist.x86.exe,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x86.exe,vc_redist.x86.exe,75,HIGH,60,Malware Staging,YES
+2,31464,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,2,,0,,
+2,15084,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,2,,0,,
+2,36896,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,2,,0,,
+2,27672,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\Microsoft.NET\Framework64\v3.5\AddInUtil.exe,addinutil.exe,2,,0,,
+2,17304,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,34668,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,1088,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,25604,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,35696,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,20976,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,19652,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,11348,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,18108,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,9404,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,7756,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,11192,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,9928,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,7204,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,28180,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,35008,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,23636,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,12656,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,20420,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,23920,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,11524,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,34060,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,35220,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,28712,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,7816,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\schtasks.exe,schtasks.exe,2,,0,,
+2,8432,C:\Windows\System32\conhost.exe,conhost.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,30892,C:\Windows\System32\conhost.exe,conhost.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,25220,C:\Windows\System32\wevtutil.exe,wevtutil.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,18876,C:\Windows\System32\wevtutil.exe,wevtutil.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,16252,C:\Windows\System32\wevtutil.exe,wevtutil.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,9028,C:\Windows\System32\wevtutil.exe,wevtutil.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,25132,C:\Windows\System32\wevtutil.exe,wevtutil.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,integrator.exe,2,,0,,
+2,29968,C:\Program Files (x86)\Microsoft\EdgeWebView\Application\148.0.3967.83\msedgewebview2.exe,msedgewebview2.exe,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,excel.exe,218,,0,,
+3,12756,C:\Users\DELL\office_portable_x3.exe,office_portable_x3.exe,C:\Windows\System32\cmd.exe,cmd.exe,60,CRITICAL,100,EDR Rule Detection | Malware Staging | Sigma Match,YES
+3,6972,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,C:\Windows\System32\cmd.exe,cmd.exe,28,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+3,2204,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,C:\Windows\System32\cmd.exe,cmd.exe,28,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+3,33860,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,C:\Windows\System32\cmd.exe,cmd.exe,28,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+3,10492,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,C:\Windows\System32\cmd.exe,cmd.exe,28,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+3,11540,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe,C:\Windows\System32\cmd.exe,cmd.exe,28,CRITICAL,100,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool,YES
+3,15060,C:\Windows\Temp\{78D4DDB5-69A4-4E33-8D81-C18D0FEE1B6E}\.be\VC_redist.x64.exe,vc_redist.x64.exe,C:\Windows\Temp\{20A855C1-AE88-4232-8344-2B69A1F8BD6B}\.cr\vc_redist.x64.exe,vc_redist.x64.exe,5,LOW,20,Malware Staging,YES
+3,20236,C:\Windows\Temp\{4D6017BE-87C2-47B2-8E1B-AA3353D660BA}\.be\VC_redist.x86.exe,vc_redist.x86.exe,C:\Windows\Temp\{27E1843A-2F51-4486-B11C-361AB8D51008}\.cr\vc_redist.x86.exe,vc_redist.x86.exe,5,LOW,20,Malware Staging,YES
+3,31224,C:\Windows\System32\conhost.exe,conhost.exe,C:\Users\Public\Pictures\kelotopu\uusd.exe,uusd.exe,1,,0,,
+3,20928,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\wevtutil.exe,wevtutil.exe,2,,0,,
+3,24864,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\wevtutil.exe,wevtutil.exe,2,,0,,
+3,33392,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\wevtutil.exe,wevtutil.exe,2,,0,,
+3,2416,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\wevtutil.exe,wevtutil.exe,2,,0,,
+3,28660,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\wevtutil.exe,wevtutil.exe,2,,0,,
+3,14924,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,7640,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,34084,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,19008,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,28232,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,19576,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\cmd.exe,cmd.exe,2,,0,,
+3,12496,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\curl.exe,curl.exe,2,,0,,
+3,19116,C:\Windows\System32\conhost.exe,conhost.exe,C:\Windows\System32\reg.exe,reg.exe,2,,0,,

@@ -1,0 +1,17 @@
+title: Office Application Spawning cmd or PowerShell
+id: yaml-rule-001
+level: critical
+mitre: T1059.003
+description: Microsoft Office application spawning a command shell or script interpreter
+detection:
+  parent_contains:
+    - winword.exe
+    - excel.exe
+    - outlook.exe
+    - powerpnt.exe
+  process_contains:
+    - cmd.exe
+    - powershell.exe
+    - wscript.exe
+    - cscript.exe
+    - mshta.exe

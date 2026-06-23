@@ -1,0 +1,22 @@
+[
+  {
+    "comment": "Windows scheduled task cache updates by svchost — benign",
+    "pattern": "schedule.taskcache.tasks"
+  },
+  {
+    "comment": "Office ClickToRun internet zone map modifications — benign",
+    "pattern": "internet settings.zonemap"
+  },
+  {
+    "comment": "BackgroundTaskHost WebAccountProvider — benign",
+    "pattern": "backgroundtaskhost.*webaccountprovider"
+  },
+  {
+    "comment": "RuntimeBroker -Embedding invocation — benign",
+    "pattern": "runtimebroker.*-embedding"
+  },
+  {
+    "comment": "conhost with ForceV1 flag — benign console host",
+    "pattern": "conhost.*-forcev1"
+  }
+]

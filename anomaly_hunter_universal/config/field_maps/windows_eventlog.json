@@ -1,0 +1,14 @@
+{
+  "_comment": "Windows Security Event Log CSV export (e.g. from Event Viewer or Splunk)",
+  "_ts":           "TimeCreated",
+  "_process":      "NewProcessName",
+  "_parent":       "ParentProcessName",
+  "_cmdline":      "CommandLine",
+  "_src_ip":       "IpAddress",
+  "_username":     "SubjectUserName",
+  "_hostname":     "WorkstationName",
+  "_pid":          "NewProcessId",
+  "_event_action": "EventID",
+  "_registry":     "ObjectName",
+  "_filepath":     "ObjectName"
+}

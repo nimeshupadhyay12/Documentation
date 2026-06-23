@@ -1,0 +1,93 @@
+Metric,Value
+Generated,2026-06-23 12:48:52
+Anomaly Hunter Version,3.0
+,
+=== OVERVIEW ===,
+Total Events Analysed,3216
+Unique Alerts,1012
+Investigation Queue,359
+Correlated Incidents,5
+Kill Chain Stages,17
+IOCs Extracted,891
+Beaconing Pairs,0
+Process Tree Nodes,209
+,
+=== SEVERITY BREAKDOWN ===,
+  CRITICAL,114
+  HIGH,158
+  MEDIUM,87
+  LOW,392
+  FP-SUPPRESSED,13
+,
+=== PATIENT ZERO ===,
+  Process,C:\Users\DELL\office_portable_x3.exe
+  Process Name,office_portable_x3.exe
+  Parent,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+  Parent Name,powershell.exe
+  First Seen,"Jun 1, 2026 @ 14:22:57.532"
+  Raw Events,0
+  Risk Score,100
+  Severity,CRITICAL
+  Detection,EDR Rule Detection | Malware Staging | Sigma Match
+  Reason,"Security rule fired on: office_portable_x3.exe | ""C:\Users\DELL\office_portable_x3.exe""  ; Execution from user-writable path: c:\users\dell\office_portable_x3.exe ; Executable running from Users/ directory — possible dropper"
+,
+=== TOP DETECTION TYPES ===,
+  LOLBin Abuse,344
+  Malware Staging,319
+  Network Outlier,291
+  Sigma Match,249
+  Rare Parent-Child,43
+  PowerShell Payload,41
+  EDR Rule Detection,33
+  Suspicious User-Agent / Tool,33
+  External Communication,33
+  Defense Evasion,31
+,
+=== IOC HIGHLIGHTS ===,
+  Suspected C2 IPs,52.109.0.35 | 96.9.98.205 | 94.130.10.179 | 95.179.162.106 | 23.37.85.99 | 104.18.20.213 | 103.243.115.105 | 52.168.117.170
+  Persistence Keys,HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\xuvotopo
+,
+=== TOP CORRELATED INCIDENTS ===,
+  INC-002-4E5EC3 — Defense Evasion + Persistence,Score=100  Severity=CRITICAL
+  INC-003-DC5CF6 — Download-and-Execute Dropper,Score=100  Severity=HIGH
+  INC-005-B43104 — Scheduled Task / Script Persistence Abuse,Score=100  Severity=HIGH
+  INC-006-33B0FC — LOLBin Execution Chain,Score=100  Severity=MEDIUM
+  INC-007-BA266B — Sigma Rule Critical Cluster,Score=100  Severity=HIGH
+,
+=== TOP MITRE TECHNIQUES ===,
+  T1036,177
+  T1059.001,149
+  T1053.005,75
+  T1218,73
+  T1547.001,22
+  T1003.001,21
+  T1059.005,20
+  T1059.003,13
+,
+=== TOP SUSPICIOUS PROCESSES ===,
+  EXCEL.EXE,267
+  powershell.exe,149
+  office_portable_x3.exe,146
+  schtasks.exe,75
+  msiexec.exe,67
+  vc_redist.x64.exe,63
+  vc_redist.x86.exe,58
+  uusd.exe,24
+,
+=== THREAT INTEL SUMMARY ===,
+  Unknown,820
+  Suspicious,64
+  Malicious,5
+  Recon,2
+,
+=== ANALYST RECOMMENDATIONS ===,
+  ,1. IMMEDIATE: Isolate any host with CRITICAL or HIGH severity alerts
+  ,2. IMMEDIATE: Block all identified C2 / suspicious external IPs at perimeter
+  ,3. HIGH:      Review and remove any persistence keys/tasks identified in alerts
+  ,4. HIGH:      Collect and sandbox all malicious IOC files identified
+  ,5. HIGH:      Check for defense evasion: review AV/EDR exclusion lists
+  ,6. MEDIUM:    Submit all IOC file hashes to VirusTotal for attribution
+  ,7. MEDIUM:    Block suspicious domains identified in DNS Anomaly alerts
+  ,8. MEDIUM:    Image and forensically preserve all affected endpoints
+  ,"   DYNAMIC: Block C2 IPs: 52.109.0.35, 96.9.98.205, 94.130.10.179, 95.179.162.106, 23.37.85.99"
+  ,   DYNAMIC: Remove persistence entry: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\xuvotopo

@@ -1,0 +1,18 @@
+{
+  "_comment": "Sysmon CSV export field map — works with Sysmon XML converted to CSV",
+  "_ts":             "UtcTime",
+  "_process":        "Image",
+  "_parent":         "ParentImage",
+  "_cmdline":        "CommandLine",
+  "_src_ip":         "SourceIp",
+  "_dst_ip":         "DestinationIp",
+  "_domain":         "QueryName",
+  "_registry":       "TargetObject",
+  "_filepath":       "TargetFilename",
+  "_pid":            "ProcessId",
+  "_event_action":   "EventID",
+  "_username":       "User",
+  "_hostname":       "Computer",
+  "_hash":           "Hashes",
+  "_target_process": "TargetImage"
+}

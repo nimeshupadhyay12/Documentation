@@ -1,0 +1,31 @@
+anomaly_hunter_v3/
+│
+├── main.py                      ← Entry point — runs the entire pipeline
+├── schema_mapper.py             ← Understands any log format automatically
+│
+├── config/
+│   └── config.py                ← All detection rules, thresholds, IOC lists
+│
+├── detection/
+│   ├── detectors.py             ← 21 threat detection rules
+│   ├── sigma_engine.py          ← 15 Sigma rules
+│   └── beaconing_engine.py      ← C2 communication detection
+│
+├── intelligence/
+│   ├── ioc_extractor.py         ← Extracts indicators of compromise
+│   └── threat_intel.py          ← Enriches IOCs with threat intelligence
+│
+├── correlation/
+│   ├── risk_engine.py           ← Scores and ranks every alert
+│   ├── correlation_engine.py    ← Groups related alerts into incidents
+│   └── attack_chain.py          ← Reconstructs the attack sequence
+│
+├── investigation/
+│   ├── process_tree.py          ← Builds the process hierarchy
+│   ├── timeline_engine.py       ← Creates the attack timeline
+│   └── investigation_engine.py  ← Generates the investigation narrative
+│
+└── reporting/
+    ├── reports.py               ← Writes all CSV output files
+    ├── html_report.py           ← Generates the HTML report
+    └── executive_report.py      ← Executive summary and JSON output

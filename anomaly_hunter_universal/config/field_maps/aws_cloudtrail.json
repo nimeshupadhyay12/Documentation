@@ -1,0 +1,13 @@
+{
+  "_comment": "AWS CloudTrail JSON/CSV export",
+  "_ts":           "eventTime",
+  "_process":      "eventName",
+  "_parent":       "eventSource",
+  "_cmdline":      "requestParameters",
+  "_src_ip":       "sourceIPAddress",
+  "_username":     "userIdentity.userName",
+  "_hostname":     "recipientAccountId",
+  "_event_action": "eventName",
+  "_filepath":     "resources",
+  "_message":      "errorMessage"
+}

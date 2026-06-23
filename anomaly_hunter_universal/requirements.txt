@@ -1,0 +1,20 @@
+# Anomaly Hunter v3 — Requirements
+# Core
+pandas>=2.0.0
+numpy>=1.24.0
+python-dateutil>=2.8.2
+
+# Optional: Excel input/output support
+openpyxl>=3.1.2
+
+# Optional: Sigma YAML rules
+PyYAML>=6.0
+
+# Optional: statistical analysis
+scipy>=1.11.0
+
+# Optional: live threat intel (only needed with --threat-intel)
+# requests>=2.31.0
+
+# Dev / testing
+# pytest>=7.4.0

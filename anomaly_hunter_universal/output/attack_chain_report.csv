@@ -1,0 +1,68 @@
+Chain ID,Root Process,Child Process,Full Child Path,Chain Risk Score,Detection Count,Detections,Chain Summary,MITRE Technique,MITRE Name
+AC-0003,,integrator.exe,C:\Program Files\Microsoft Office\root\Integration\Integrator.exe,100,17,Persistence, → integrator.exe,,
+AC-0018,microsoft-365-16-0-19725-20152.exe,microsoft-365-16-0-19725-20152.exe,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,100,2,Malware Staging | Rare Parent-Child | Sigma Match,microsoft-365-16-0-19725-20152.exe → microsoft-365-16-0-19725-20152.exe,,
+AC-0004,,excel.exe,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,100,265,External Communication | Network Outlier | Network Outlier, → excel.exe,,
+AC-0055,,wscript.exe,C:\Windows\System32\wscript.exe,100,11,LOLBin Abuse, → wscript.exe,T1059.005,Visual Basic
+AC-0056,svchost.exe,wscript.exe,C:\Windows\System32\wscript.exe,100,9,EDR Rule Detection | LOLBin Abuse | Sigma Match | Suspicious Parent-Child | Svchost Script Spawn | LOLBin Abuse | Sigma Match | Suspicious Parent-Child | Svchost Script Spawn,svchost.exe → wscript.exe,T1059.005,Visual Basic
+AC-0017,,microsoft-365-16-0-19725-20152.exe,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,100,4,Malware Staging | Sigma Match, → microsoft-365-16-0-19725-20152.exe,,
+AC-0024,,uusd.exe,C:\Users\Public\Pictures\kelotopu\uusd.exe,100,21,External Communication | Malware Staging | Network Outlier | Sigma Match | Malware Staging | Network Outlier | Sigma Match, → uusd.exe,,
+AC-0023,cmd.exe,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,100,4,EDR Rule Detection | Malware Staging | Sigma Match | Malware Staging | Sigma Match,cmd.exe → office_portable_x3.exe,,
+AC-0022,powershell.exe,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,100,4,EDR Rule Detection | Malware Staging | Sigma Match | Malware Staging | Sigma Match,powershell.exe → office_portable_x3.exe,,
+AC-0035,cmd.exe,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,100,20,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool | Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Suspicious User-Agent / Tool | Defense Evasion | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool | Defense Evasion | LOLBin Abuse | PowerShell Payload | Suspicious User-Agent / Tool,cmd.exe → powershell.exe,T1059.001,PowerShell
+AC-0032,,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,100,127,External Communication | LOLBin Abuse | LOLBin Abuse, → powershell.exe,T1059.001,PowerShell
+AC-0034,powershell.exe,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,100,1,Download Execute | LOLBin Abuse | PowerShell Payload | Rare Parent-Child | Sigma Match | Suspicious User-Agent / Tool,powershell.exe → powershell.exe,T1059.001,PowerShell
+AC-0027,msiexec.exe,msiexec.exe,C:\Windows\SysWOW64\msiexec.exe,100,4,LOLBin Abuse | PowerShell Payload,msiexec.exe → msiexec.exe,T1218,
+AC-0025,wscript.exe,uusd.exe,C:\Users\Public\Pictures\kelotopu\uusd.exe,100,3,EDR Rule Detection | Malware Staging | Network Outlier | Sigma Match | Malware Staging | Network Outlier | Sigma Match,wscript.exe → uusd.exe,,
+AC-0020,,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,100,130,Malware Staging | Sigma Match, → office_portable_x3.exe,,
+AC-0021,office_portable_x3.exe,office_portable_x3.exe,C:\Users\DELL\office_portable_x3.exe,100,8,EDR Rule Detection | Malware Staging | Sigma Match | Malware Staging | Sigma Match,office_portable_x3.exe → office_portable_x3.exe,,
+AC-0039,office_portable_x3.exe,curl.exe,C:\Windows\System32\curl.exe,100,4,EDR Rule Detection | LOLBin Abuse | Recon / IP Discovery | LOLBin Abuse | Recon / IP Discovery,office_portable_x3.exe → curl.exe,T1016,System Network Config Discovery
+AC-0038,,curl.exe,C:\Windows\System32\curl.exe,100,5,External Communication | LOLBin Abuse | LOLBin Abuse | LOLBin Abuse | Recon / IP Discovery, → curl.exe,T1016,System Network Config Discovery
+AC-0036,office_portable_x3.exe,cmd.exe,C:\Windows\System32\cmd.exe,100,13,Defense Evasion | EDR Rule Detection | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool | Defense Evasion | LOLBin Abuse | PowerShell Payload | Sigma Match | Suspicious User-Agent / Tool | Defense Evasion | LOLBin Abuse | PowerShell Payload | Suspicious User-Agent / Tool | LOLBin Abuse,office_portable_x3.exe → cmd.exe,T1059.003,Windows Command Shell
+AC-0044,msiexec.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,100,4,LOLBin Abuse | PowerShell Payload,msiexec.exe → msiexec.exe,T1218,
+AC-0047,office_portable_x3.exe,reg.exe,C:\Windows\System32\reg.exe,100,4,EDR Rule Detection | LOLBin Abuse | Persistence | Sigma Match | LOLBin Abuse | Sigma Match,office_portable_x3.exe → reg.exe,T1547.001,Registry Run Keys / Startup Folder
+AC-0059,,vc_redist.x64.exe,C:\Windows\Temp\{20A855C1-AE88-4232-8344-2B69A1F8BD6B}\.cr\vc_redist.x64.exe,100,61,Malware Staging, → vc_redist.x64.exe,,
+AC-0061,,vc_redist.x86.exe,C:\Windows\Temp\{27E1843A-2F51-4486-B11C-361AB8D51008}\.cr\vc_redist.x86.exe,100,56,Malware Staging, → vc_redist.x86.exe,,
+AC-0067,,explorer.exe,C:\Windows\explorer.exe,100,7,Malware Staging, → explorer.exe,,
+AC-0048,,schtasks.exe,C:\Windows\System32\schtasks.exe,100,25,LOLBin Abuse, → schtasks.exe,T1053.005,Scheduled Task
+AC-0051,office_portable_x3.exe,schtasks.exe,C:\Windows\System32\schtasks.exe,100,2,LOLBin Abuse | Persistence via Cmdline | Rare Parent-Child | Sigma Match,office_portable_x3.exe → schtasks.exe,T1053.005,Scheduled Task
+AC-0050,integrator.exe,schtasks.exe,C:\Windows\System32\schtasks.exe,100,20,LOLBin Abuse | LOLBin Abuse | Sigma Match,integrator.exe → schtasks.exe,T1053.005,Scheduled Task
+AC-0043,,msiexec.exe,C:\Windows\System32\msiexec.exe,100,62,LOLBin Abuse, → msiexec.exe,T1218,
+AC-0042,,lsass.exe,C:\Windows\System32\lsass.exe,100,21,External Communication | Sigma Match | Sigma Match, → lsass.exe,,
+AC-0049,officeclicktorun.exe,schtasks.exe,C:\Windows\System32\schtasks.exe,100,28,LOLBin Abuse | LOLBin Abuse | Sigma Match,officeclicktorun.exe → schtasks.exe,T1053.005,Scheduled Task
+AC-0019,explorer.exe,microsoft-365-16-0-19725-20152.exe,C:\Users\DELL\Downloads\microsoft-365-16-0-19725-20152.exe,80,1,Malware Staging | Rare Parent-Child | Sigma Match,explorer.exe → microsoft-365-16-0-19725-20152.exe,,
+AC-0058,,searchhost.exe,C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe,80,4,Malware Staging, → searchhost.exe,,
+AC-0046,,reg.exe,C:\Windows\System32\reg.exe,80,1,LOLBin Abuse | Persistence | Rare Parent-Child, → reg.exe,T1547.001,Registry Run Keys / Startup Folder
+AC-0033,windowsterminal.exe,powershell.exe,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,70,1,LOLBin Abuse | Rare Parent-Child | Suspicious User-Agent / Tool,windowsterminal.exe → powershell.exe,T1059.001,PowerShell
+AC-0045,services.exe,msiexec.exe,C:\Windows\System32\msiexec.exe,65,1,LOLBin Abuse | PowerShell Payload | Rare Parent-Child,services.exe → msiexec.exe,T1218,
+AC-0005,explorer.exe,excel.exe,C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE,60,2,Network Outlier | Rare Parent-Child,explorer.exe → excel.exe,,
+AC-0065,,vc_redist.x64.exe,C:\Windows\Temp\{78D4DDB5-69A4-4E33-8D81-C18D0FEE1B6E}\.be\VC_redist.x64.exe,60,3,Malware Staging, → vc_redist.x64.exe,,
+AC-0015,,hxtsr.exe,C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.22342.0_x64__8wekyb3d8bbwe\HxTsr.exe,60,4,External Communication, → hxtsr.exe,,
+AC-0057,svchost.exe,lockapp.exe,C:\Windows\SystemApps\Microsoft.LockApp_cw5n1h2txyewy\LockApp.exe,60,2,Rare Parent-Child | Rare Process,svchost.exe → lockapp.exe,,
+AC-0063,,vc_redist.x86.exe,C:\Windows\Temp\{4D6017BE-87C2-47B2-8E1B-AA3353D660BA}\.be\VC_redist.x86.exe,60,3,Malware Staging, → vc_redist.x86.exe,,
+AC-0031,services.exe,vssvc.exe,C:\Windows\System32\VSSVC.exe,60,2,Rare Parent-Child | Rare Process,services.exe → vssvc.exe,,
+AC-0030,searchindexer.exe,searchprotocolhost.exe,C:\Windows\System32\SearchProtocolHost.exe,60,2,Rare Parent-Child | Rare Process,searchindexer.exe → searchprotocolhost.exe,,
+AC-0026,,msiexec.exe,C:\Windows\SysWOW64\msiexec.exe,50,2,LOLBin Abuse, → msiexec.exe,T1218,
+AC-0010,,ms-teams.exe,C:\Program Files\WindowsApps\MSTeams_26106.1911.4707.3286_x64__8wekyb3d8bbwe\ms-teams.exe,45,1,External Communication | Rare Parent-Child | Rare Process, → ms-teams.exe,,
+AC-0060,vc_redist.x64.exe,vc_redist.x64.exe,C:\Windows\Temp\{20A855C1-AE88-4232-8344-2B69A1F8BD6B}\.cr\vc_redist.x64.exe,40,2,Malware Staging,vc_redist.x64.exe → vc_redist.x64.exe,,
+AC-0066,vc_redist.x64.exe,vc_redist.x64.exe,C:\Windows\Temp\{78D4DDB5-69A4-4E33-8D81-C18D0FEE1B6E}\.be\VC_redist.x64.exe,40,2,Malware Staging,vc_redist.x64.exe → vc_redist.x64.exe,,
+AC-0064,vc_redist.x86.exe,vc_redist.x86.exe,C:\Windows\Temp\{4D6017BE-87C2-47B2-8E1B-AA3353D660BA}\.be\VC_redist.x86.exe,40,2,Malware Staging,vc_redist.x86.exe → vc_redist.x86.exe,,
+AC-0062,vc_redist.x86.exe,vc_redist.x86.exe,C:\Windows\Temp\{27E1843A-2F51-4486-B11C-361AB8D51008}\.cr\vc_redist.x86.exe,40,2,Malware Staging,vc_redist.x86.exe → vc_redist.x86.exe,,
+AC-0001,officeclicktorun.exe,vc_redist.x64.exe,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x64.exe,30,2,Rare Parent-Child,officeclicktorun.exe → vc_redist.x64.exe,,
+AC-0002,officeclicktorun.exe,vc_redist.x86.exe,C:\Program Files\Microsoft Office\root\Integration\Addons\vc_redist.x86.exe,30,2,Rare Parent-Child,officeclicktorun.exe → vc_redist.x86.exe,,
+AC-0016,svchost.exe,hxtsr.exe,C:\Program Files\WindowsApps\microsoft.windowscommunicationsapps_16005.14326.22342.0_x64__8wekyb3d8bbwe\HxTsr.exe,30,2,Rare Parent-Child,svchost.exe → hxtsr.exe,,
+AC-0011,,ms-teamsupdate.exe,C:\Program Files\WindowsApps\MSTeams_26106.1911.4707.3286_x64__8wekyb3d8bbwe\ms-teamsupdate.exe,30,2,External Communication, → ms-teamsupdate.exe,,
+AC-0029,searchindexer.exe,searchfilterhost.exe,C:\Windows\System32\SearchFilterHost.exe,30,2,Rare Parent-Child,searchindexer.exe → searchfilterhost.exe,,
+AC-0008,,onedrivestandaloneupdater.exe,C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe,30,2,External Communication, → onedrivestandaloneupdater.exe,,
+AC-0007,officeclicktorun.exe,olicenseheartbeat.exe,C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\Office16\OLicenseHeartbeat.exe,30,2,Rare Parent-Child,officeclicktorun.exe → olicenseheartbeat.exe,,
+AC-0014,wt.exe,windowsterminal.exe,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe,30,1,Rare Parent-Child | Rare Process,wt.exe → windowsterminal.exe,,
+AC-0013,windowsterminal.exe,openconsole.exe,C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11321.0_x64__8wekyb3d8bbwe\OpenConsole.exe,30,1,Rare Parent-Child | Rare Process,windowsterminal.exe → openconsole.exe,,
+AC-0012,svchost.exe,ms-teamsupdate.exe,C:\Program Files\WindowsApps\MSTeams_26106.1911.4707.3286_x64__8wekyb3d8bbwe\ms-teamsupdate.exe,30,2,Rare Parent-Child,svchost.exe → ms-teamsupdate.exe,,
+AC-0006,,olicenseheartbeat.exe,C:\Program Files\Microsoft Office\root\vfs\ProgramFilesCommonX64\Microsoft Shared\Office16\OLicenseHeartbeat.exe,30,2,External Communication, → olicenseheartbeat.exe,,
+AC-0054,services.exe,sppsvc.exe,C:\Windows\System32\sppsvc.exe,30,2,Rare Parent-Child,services.exe → sppsvc.exe,,
+AC-0009,svchost.exe,onedrivestandaloneupdater.exe,C:\Program Files\Microsoft OneDrive\OneDriveStandaloneUpdater.exe,30,2,Rare Parent-Child,svchost.exe → onedrivestandaloneupdater.exe,,
+AC-0037,svchost.exe,consent.exe,C:\Windows\System32\consent.exe,30,2,Rare Parent-Child,svchost.exe → consent.exe,,
+AC-0041,svchost.exe,dllhost.exe,C:\Windows\System32\dllhost.exe,30,2,Rare Parent-Child,svchost.exe → dllhost.exe,,
+AC-0052,,smartscreen.exe,C:\Windows\System32\smartscreen.exe,30,2,External Communication, → smartscreen.exe,,
+AC-0028,,searchfilterhost.exe,C:\Windows\System32\SearchFilterHost.exe,15,1,Rare Parent-Child, → searchfilterhost.exe,,
+AC-0040,,dllhost.exe,C:\Windows\System32\dllhost.exe,15,1,Rare Parent-Child, → dllhost.exe,,
+AC-0053,svchost.exe,smartscreen.exe,C:\Windows\System32\smartscreen.exe,15,1,Rare Parent-Child,svchost.exe → smartscreen.exe,,

@@ -1,0 +1,14 @@
+{
+  "_comment": "Zeek (formerly Bro) network log TSV/CSV export",
+  "_ts":           "ts",
+  "_src_ip":       "id.orig_h",
+  "_dst_ip":       "id.resp_h",
+  "_port":         "id.resp_p",
+  "_protocol":     "proto",
+  "_domain":       "query",
+  "_event_action": "conn_state",
+  "_username":     "username",
+  "_hostname":     "id.orig_h",
+  "_message":      "notice.msg",
+  "_filepath":     "filename"
+}
