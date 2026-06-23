@@ -1,0 +1,502 @@
+{
+  "name": "Anomaly Hunter Pro \u2014 Detection Results",
+  "versions": {
+    "attack": "14",
+    "navigator": "4.9",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Techniques detected by Anomaly Hunter Pro. 9 techniques triggered, 24 techniques have coverage.",
+  "filters": {
+    "platforms": [
+      "Windows",
+      "Linux",
+      "macOS",
+      "Cloud"
+    ]
+  },
+  "sorting": 3,
+  "layout": {
+    "layout": "side",
+    "aggregateFunction": "sum",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": true,
+    "countUnscored": false
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1036",
+      "tactic": "defense-evasion",
+      "score": 177,
+      "color": "#cc0000",
+      "comment": "Masquerading: 177 alert(s)\n[CRITICAL] office_portable_x3.exe \u2014 EDR Rule Detection | Malware Staging | S (score=100)\n[CRITICAL] office_portable_x3.exe \u2014 EDR Rule Detection | Malware Staging | S (score=100)\n[CRITICAL] uusd.exe \u2014 EDR Rule Detection | Malware Staging | N (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "177"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.005",
+      "tactic": "execution",
+      "score": 20,
+      "color": "#ff9999",
+      "comment": "Visual Basic: 20 alert(s)\n[CRITICAL] wscript.exe \u2014 EDR Rule Detection | LOLBin Abuse | Sigm (score=100)\n[CRITICAL] wscript.exe \u2014 EDR Rule Detection | LOLBin Abuse | Sigm (score=100)\n[CRITICAL] wscript.exe \u2014 EDR Rule Detection | LOLBin Abuse | Sigm (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "20"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1547.001",
+      "tactic": "persistence",
+      "score": 22,
+      "color": "#ff9999",
+      "comment": "Registry Run Keys / Startup Folder: 22 alert(s)\n[CRITICAL] Integrator.exe \u2014 Persistence (score=100)\n[CRITICAL] Integrator.exe \u2014 Persistence (score=100)\n[CRITICAL] Integrator.exe \u2014 Persistence (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "22"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.001",
+      "tactic": "execution",
+      "score": 149,
+      "color": "#cc0000",
+      "comment": "PowerShell: 149 alert(s)\n[CRITICAL] powershell.exe \u2014 Download Execute | LOLBin Abuse | PowerS (score=100)\n[CRITICAL] powershell.exe \u2014 Defense Evasion | LOLBin Abuse | PowerSh (score=100)\n[CRITICAL] powershell.exe \u2014 Defense Evasion | LOLBin Abuse | PowerSh (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "149"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1053.005",
+      "tactic": "persistence",
+      "score": 75,
+      "color": "#ff6666",
+      "comment": "Scheduled Task: 75 alert(s)\n[CRITICAL] schtasks.exe \u2014 LOLBin Abuse | Persistence via Cmdline | (score=100)\n[CRITICAL] schtasks.exe \u2014 LOLBin Abuse | Persistence via Cmdline | (score=100)\n[HIGH] schtasks.exe \u2014 LOLBin Abuse | Sigma Match (score=60)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "75"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.003",
+      "tactic": "execution",
+      "score": 13,
+      "color": "#ff9999",
+      "comment": "Windows Command Shell: 13 alert(s)\n[CRITICAL] cmd.exe \u2014 Defense Evasion | LOLBin Abuse | PowerSh (score=100)\n[CRITICAL] cmd.exe \u2014 Defense Evasion | LOLBin Abuse | PowerSh (score=100)\n[CRITICAL] cmd.exe \u2014 Defense Evasion | LOLBin Abuse | PowerSh (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "13"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1218",
+      "tactic": "defense-evasion",
+      "score": 73,
+      "color": "#ff6666",
+      "comment": "T1218: 73 alert(s)\n[CRITICAL] msiexec.exe \u2014 LOLBin Abuse (score=100)\n[CRITICAL] msiexec.exe \u2014 LOLBin Abuse (score=100)\n[CRITICAL] msiexec.exe \u2014 LOLBin Abuse (score=100)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "73"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1016",
+      "tactic": "discovery",
+      "score": 9,
+      "color": "#ffcccc",
+      "comment": "System Network Config Discovery: 9 alert(s)\n[CRITICAL] curl.exe \u2014 EDR Rule Detection | LOLBin Abuse | Reco (score=100)\n[CRITICAL] curl.exe \u2014 EDR Rule Detection | LOLBin Abuse | Reco (score=100)\n[MEDIUM] curl.exe \u2014 LOLBin Abuse | Recon / IP Discovery (score=55)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "9"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1003.001",
+      "tactic": "credential-access",
+      "score": 21,
+      "color": "#ff9999",
+      "comment": "T1003.001: 21 alert(s)\n[CRITICAL] lsass.exe \u2014 Sigma Match (score=90)\n[CRITICAL] lsass.exe \u2014 Sigma Match (score=90)\n[CRITICAL] lsass.exe \u2014 Sigma Match (score=90)",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Alert Count",
+          "value": "21"
+        },
+        {
+          "name": "Severity",
+          "value": "CRITICAL"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1047",
+      "tactic": "execution",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "WMI: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1595",
+      "tactic": "reconnaissance",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1595: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1490",
+      "tactic": "impact",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1490: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.010",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "Regsvr32: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1127.001",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "MSBuild: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1110",
+      "tactic": "credential-access",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1110: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.004",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "InstallUtil: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1568",
+      "tactic": "command-and-control",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1568: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1190",
+      "tactic": "initial-access",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1190: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.005",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "MSHTA: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1083",
+      "tactic": "discovery",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1083: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1069",
+      "tactic": "discovery",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1069: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1204",
+      "tactic": "execution",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1204: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1218.011",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "Rundll32: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1078",
+      "tactic": "defense-evasion",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "T1078: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    },
+    {
+      "techniqueID": "T1105",
+      "tactic": "command-and-control",
+      "score": 0,
+      "color": "#e8f5e9",
+      "comment": "Ingress Tool Transfer: Detection rule exists, 0 alerts this run",
+      "enabled": true,
+      "metadata": [
+        {
+          "name": "Coverage",
+          "value": "Detector exists"
+        }
+      ],
+      "links": [],
+      "showSubtechniques": false
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#ff6666"
+    ],
+    "minValue": 0,
+    "maxValue": 177
+  },
+  "legendItems": [
+    {
+      "label": "CRITICAL alerts",
+      "color": "#cc0000"
+    },
+    {
+      "label": "HIGH alerts",
+      "color": "#ff6666"
+    },
+    {
+      "label": "MEDIUM alerts",
+      "color": "#ff9999"
+    },
+    {
+      "label": "Coverage (0 hits)",
+      "color": "#e8f5e9"
+    },
+    {
+      "label": "No coverage",
+      "color": "#ffffff"
+    }
+  ],
+  "metadata": [],
+  "links": [],
+  "showTacticRowBackground": true,
+  "tacticRowBackground": "#dddddd",
+  "selectTechniquesAcrossTactics": true,
+  "selectSubtechniquesWithParent": false
+}

@@ -1,0 +1,29 @@
+# Anomaly Hunter Pro — Requirements
+# ─────────────────────────────────
+# Core (required)
+pandas>=2.0.0
+numpy>=1.24.0
+python-dateutil>=2.8.2
+matplotlib>=3.8.0
+
+# ML detection (required for --ml flag)
+scikit-learn>=1.4.0
+scipy>=1.11.0
+
+# File format support
+openpyxl>=3.1.2         # Excel input/output
+PyYAML>=6.0             # Sigma YAML rules
+
+# Real-time watch mode
+watchdog>=3.0.0
+
+# Testing
+pytest>=7.4.0
+
+# Optional: live threat intel APIs
+# requests>=2.31.0      # only needed for --threat-intel / --threat-feeds
+
+# Optional: faster CSV processing (10x speedup on large files)
+# polars>=0.20.0
+
+# Optional: SOAR integrations (no extra installs needed — uses urllib)

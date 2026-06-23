@@ -1,0 +1,11 @@
+{
+  "_comment": "Apache / Nginx access log exported to CSV",
+  "_ts":           "time",
+  "_src_ip":       "clientip",
+  "_cmdline":      "request",
+  "_event_action": "verb",
+  "_severity":     "response",
+  "_message":      "request",
+  "_hostname":     "host",
+  "_username":     "auth"
+}

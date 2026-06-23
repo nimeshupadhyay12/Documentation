@@ -1,0 +1,13 @@
+{
+  "_comment": "Suricata EVE JSON log (flattened to CSV)",
+  "_ts":           "timestamp",
+  "_src_ip":       "src_ip",
+  "_dst_ip":       "dest_ip",
+  "_port":         "dest_port",
+  "_protocol":     "proto",
+  "_domain":       "dns.rrname",
+  "_event_action": "event_type",
+  "_message":      "alert.signature",
+  "_severity":     "alert.severity",
+  "_hostname":     "host"
+}

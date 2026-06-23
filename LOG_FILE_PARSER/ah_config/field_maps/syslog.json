@@ -1,0 +1,10 @@
+{
+  "_comment": "Generic syslog CSV export (rsyslog, syslog-ng, etc.)",
+  "_ts":           "timestamp",
+  "_hostname":     "host",
+  "_severity":     "severity",
+  "_event_action": "facility",
+  "_message":      "message",
+  "_username":     "user",
+  "_process":      "program"
+}
